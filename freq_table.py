@@ -29,9 +29,9 @@ def generate_word_table(l, n, i):
     # The default english word library can also be used to solve wordle
     five_char_words = [word for word in english_words_lower_set if len(word) == n
                        and set(word) < l]
-    split_chars = [list(word) for word in five_char_words]
     '''
-
+    
+    split_chars = [list(word) for word in five_char_words]
     word_list = open("word_list.txt", "r")
     five_char_words = word_list.read().split('\n')
     
